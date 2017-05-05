@@ -1,0 +1,171 @@
+---
+---
+
+@import "variables";
+
+.company-intro {
+	padding: 101px 0;
+	max-width: 794px;
+	margin: auto;
+}
+
+.company-team {
+	min-height: 549px;
+	padding-top: 1px;
+	padding-bottom: 20px;
+	background-image: url(../img/company-team-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	h1 {
+		margin-top: 53px;
+		font-size: 36px;
+		text-align: center;
+	}
+
+	.row {
+		display: table;
+		margin: 101px auto 0;
+		text-align: center;
+
+		.team {
+			float: left;
+			display: block;
+			width: 241px;
+			margin-right: 72px;
+
+			&:last-child {
+				margin-right: 0;
+			}
+
+			img {
+				display: block;
+				width: 100%;
+			}
+
+			.name {
+				margin: 23px 0 0;
+				font-family: $prox-semi;
+				font-size: 19px;
+				line-height: 19px;
+			}
+
+			.title {
+				margin: 5px 0 0;
+				font-family: $prox-reg;
+//				font-size: 18px;
+				line-height: 16px;
+			}
+		}
+	}
+}
+
+.company-join {
+//	min-height: 376px;
+	padding-top: 1px;
+	background-image: url(../img/company-join-bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 80px 0;
+
+	h1 {
+//		margin-top: 96px;
+		font-size: 36px;
+		text-align: center;
+		color: white;
+	}
+
+	p {
+		max-width: 616px;
+		margin: auto;
+		font-size: 21px;
+		text-align: center;
+		line-height: 30px;
+		color: white;
+	}
+
+	.btn {
+		display: block;
+		width: 315px;
+		margin: 38px auto 0;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+
+	.company-team {
+		padding-bottom: 72px;
+
+		.team {
+			&:nth-child(3) {
+				clear: left;
+			}
+			&:nth-child(even) {
+				margin-right: 0;
+			}
+			&:nth-child(n+3) {
+				margin-top: 98px;
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 870px) {
+
+	.company-intro {
+		padding-top: 95px;
+		padding-bottom: 62px;
+
+		p {
+			padding: 0 35px;
+		}
+	}
+
+	.company-join {
+		padding-bottom: 64px;
+
+		p {
+			padding: 0 35px;
+		}
+
+		.btn {
+			width: 80%;
+			max-width: 315px;
+		}
+	}
+
+}
+
+@media screen and (max-width: 600px) {
+
+	.company-team {
+		.row {
+			.team {
+				width: 130px;
+			}
+		}
+	}
+
+}
+
+@media screen and (max-width: 400px) {
+
+	.company-team {
+		.row {
+			.team {
+				float: none;
+				width: 80%;
+				margin: 40px auto 0;
+
+				&:last-child {
+					margin-right: auto;
+				}
+			}
+		}
+	}
+
+}

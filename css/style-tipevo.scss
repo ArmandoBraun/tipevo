@@ -1,0 +1,92 @@
+---
+---
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "normalize.css";
+@import "din-webfonts/stylesheet.css";
+@import "proximanova-webfonts/stylesheet.css";
+@import "variables";
+@import "menu_sideslide.css";
+@import "style-navigation.css";
+@import "style-footer.css";
+@import "style-home.css";
+@import "style-product.css";
+@import "style-company.css";
+@import "jquery.selectBoxIt.css";
+@import "jquery.modal.css";
+@import "style-modal.css";
+
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+}
+body {
+	padding-top: 80px;
+}
+h1, h2, h3 {
+	font-family: $din-black;
+	text-transform: uppercase;
+	margin-top: 0;
+}
+p {
+	line-height: 1.5;
+	font-family: $prox-reg;
+}
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.btn {
+	color: white;
+	letter-spacing: 2px;
+	height: 55px;
+	line-height: 55px;
+	padding: 0 22.5px;
+	outline: 0;
+	border: 0;
+	display: inline-block;
+	font-family: $prox-semi;
+	text-transform: uppercase;
+	&.btn-blue {
+		background-color: $navy;
+		font-size: 0.938em;
+		-webkit-transition: background-color 300ms linear;
+		-ms-transition: background-color 300ms linear;
+		transition: background-color 300ms linear;
+		&:hover {
+			background-color: $red;
+		}
+	}
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+.mobile {
+	display: none;
+}
+.desktop {
+	display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+	.mobile {
+		display: inline-block;
+	}
+	.desktop {
+		display: none;
+	}
+	body {
+		padding-top: 73.33px;
+	}
+}
+

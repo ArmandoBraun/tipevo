@@ -1,0 +1,91 @@
+---
+---
+
+@import "variables";
+
+footer {
+	background-color: #1a1b1b;
+	padding: 90px 0 35px;
+	
+	.boundary {
+		max-width: 1180px;
+		margin: 0 auto;
+		box-sizing: border-box;
+		overflow: auto;
+		padding: 0 2%;
+		.footer-logo, 
+		.address, 
+		.contact {
+			display: inline-block;
+			vertical-align: top;
+			margin-right: 9%;
+			p, a {
+				color: white;
+				font-size: 0.938em;
+				font-family: $prox-reg;
+			}
+			p {
+				margin: 0;
+			}
+			a.email {
+				text-decoration: underline;
+			}
+		}
+		.social {
+//			float: right;
+			display: inline-block;
+			vertical-align: top;
+			ul {
+				margin-bottom: 60px;
+				li {
+					display: inline-block;
+					vertical-align: top;
+				}
+			}
+			p {
+				
+			}
+		}
+		.copyright {
+			font-family: $prox-reg;
+			color: #959595;
+			font-size: 0.813em;
+			float: right;
+			margin: 45px 0 0 0;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	footer {
+		padding: 30px 0;
+		.boundary {
+			.footer-logo, 
+			.address, 
+			.contact,
+			.social,
+			.copyright {
+				text-align: center;
+				display: block;
+				margin: 0 auto;
+			}
+			.footer-logo {
+				margin-bottom: 50px;
+			}
+			.address {
+				margin-bottom: 25px;
+			}
+			.contact {
+				margin-bottom: 35px;
+			}
+			.social {
+				ul {
+					margin-bottom: 35px;
+				}
+			}
+			.copyright {
+				float: none;
+			}
+		}
+	}
+}
